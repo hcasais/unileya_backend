@@ -1,0 +1,26 @@
+{
+  "name": "unileya_encurtador",
+  "version": "1.0.0",
+  "description": "Encurtador de links",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hcasais/unileya_encurtador.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hcasais/unileya_encurtador/issues"
+  },
+  "homepage": "https://github.com/hcasais/unileya_encurtador#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "pg": "^8.8.0"
+  }
+}
