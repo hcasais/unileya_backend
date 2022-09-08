@@ -1,4 +1,5 @@
 const express = require("express");
+const port = process.env.PORT || 3000;
 
 const client = require('./db/pg_config');
 client.connect();
@@ -11,7 +12,7 @@ const openurl = require("openurl");
 
 //- Ok
 server.get('/ok', (req, res) =>{
-    return res.status(200).json("OK");
+    return res.status(200).json(port);
 });
 
 //- um método que retorna uma url encurtada conforme o encurtamento da URL.
@@ -102,4 +103,4 @@ async function inserir(values){
     }
 }
 
-server.listen(8080);
+server.listen(port);
