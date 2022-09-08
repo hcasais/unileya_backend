@@ -9,6 +9,11 @@ server.use(express.json());
 const shortid = require('shortid');
 const openurl = require("openurl");
 
+//- Ok
+server.get('/ok', (req, res) =>{
+    return res.status(200).json("OK");
+});
+
 //- um método que retorna uma url encurtada conforme o encurtamento da URL.
 server.get('/short/:chave', async (req, res) =>{
     const {chave} = req.params;
